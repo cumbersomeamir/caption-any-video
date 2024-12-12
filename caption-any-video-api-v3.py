@@ -5,6 +5,7 @@ import boto3
 from flask import Flask, request, jsonify
 from botocore.exceptions import NoCredentialsError
 from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip, ColorClip
+import uuid
 from moviepy.config import change_settings
 change_settings({"IMAGEMAGICK_BINARY": "/usr/bin/convert"})
 
